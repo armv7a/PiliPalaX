@@ -132,7 +132,7 @@ class _VideoDetailPageState extends State<VideoDetailPage>
     horizontalScreen =
         setting.get(SettingBoxKey.horizontalScreen, defaultValue: false);
     autoPlayEnable =
-        setting.get(SettingBoxKey.autoPlayEnable, defaultValue: false);
+        setting.get(SettingBoxKey.autoPlayEnable, defaultValue: true);
     autoPiP = setting.get(SettingBoxKey.autoPiP, defaultValue: false);
     pipNoDanmaku = setting.get(SettingBoxKey.pipNoDanmaku, defaultValue: true);
     enableVerticalExpand =

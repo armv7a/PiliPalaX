@@ -144,7 +144,7 @@ class _ExtraSettingState extends State<ExtraSetting> {
             subTitle: '点击配置',
             leading: Icon(Icons.block),
             setKey: SettingBoxKey.enableSponsorBlock,
-            defaultVal: false,
+            defaultVal: true,
             onTap: () => Get.toNamed('/sponsorBlock'),
           ),
           Obx(
@@ -176,14 +176,14 @@ class _ExtraSettingState extends State<ExtraSetting> {
             subTitle: '是否展示「大家都在搜」',
             leading: Icon(Icons.data_thresholding_outlined),
             setKey: SettingBoxKey.enableHotKey,
-            defaultVal: true,
+            defaultVal: false,
           ),
           SetSwitchItem(
             title: '搜索默认词',
             subTitle: '是否展示搜索框默认词',
             leading: const Icon(Icons.whatshot_outlined),
             setKey: SettingBoxKey.enableSearchWord,
-            defaultVal: true,
+            defaultVal: false,
             callFn: (val) {
               Get.find<HomeController>().defaultSearch.value = '';
             },
@@ -207,7 +207,7 @@ class _ExtraSettingState extends State<ExtraSetting> {
             subTitle: '视频详情页开启ai总结',
             leading: Icon(Icons.engineering_outlined),
             setKey: SettingBoxKey.enableAi,
-            defaultVal: true,
+            defaultVal: false,
           ),
           const SetSwitchItem(
             title: '消息页禁用“收到的赞”功能',

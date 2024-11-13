@@ -38,7 +38,7 @@ class HomeController extends GetxController with GetTickerProviderStateMixin {
     userFace.value = userInfo != null ? userInfo.face : '';
     hideSearchBar =
         setting.get(SettingBoxKey.hideSearchBar, defaultValue: true);
-    if (setting.get(SettingBoxKey.enableSearchWord, defaultValue: true)) {
+    if (setting.get(SettingBoxKey.enableSearchWord, defaultValue: false)) {
       searchDefault();
     }
     useSideBar = setting.get(SettingBoxKey.useSideBar, defaultValue: false);

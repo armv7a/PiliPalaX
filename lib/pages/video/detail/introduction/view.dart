@@ -164,7 +164,7 @@ class _VideoInfoState extends State<VideoInfo> with TickerProviderStateMixin {
     videoItem = videoIntroController.videoItem!;
 
     loadingStatus = widget.loadingStatus;
-    enableAi = setting.get(SettingBoxKey.enableAi, defaultValue: true);
+    enableAi = setting.get(SettingBoxKey.enableAi, defaultValue: false);
   }
 
   void _showFavBottomSheet() => showModalBottomSheet(

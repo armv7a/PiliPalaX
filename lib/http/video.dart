@@ -34,7 +34,7 @@ class VideoHttp {
   static Box localCache = GStorage.localCache;
   static Box setting = GStorage.setting;
   static bool enableRcmdDynamic =
-      setting.get(SettingBoxKey.enableRcmdDynamic, defaultValue: true);
+      setting.get(SettingBoxKey.enableRcmdDynamic, defaultValue: false);
   static Box userInfoCache = GStorage.userInfo;
 
   // 首页推荐视频

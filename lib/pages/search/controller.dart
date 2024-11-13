@@ -38,7 +38,7 @@ class SSearchController extends GetxController {
     }
     historyCacheList = List<String>.from(historyWord.get('cacheList') ?? []);
     historyList.value = historyCacheList;
-    enableHotKey = setting.get(SettingBoxKey.enableHotKey, defaultValue: true);
+    enableHotKey = setting.get(SettingBoxKey.enableHotKey, defaultValue: false);
   }
 
   void onChange(value) {

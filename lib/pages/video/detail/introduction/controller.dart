@@ -114,7 +114,7 @@ class VideoIntroController extends GetxController
     userLogin = userInfo != null;
     lastPlayCid.value = int.parse(Get.parameters['cid']!);
     isShowOnlineTotal =
-        setting.get(SettingBoxKey.enableOnlineTotal, defaultValue: true);
+        setting.get(SettingBoxKey.enableOnlineTotal, defaultValue: false);
     startTimer();
     queryVideoIntro();
   }

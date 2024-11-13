@@ -104,7 +104,7 @@ class _RecommendSettingState extends State<RecommendSetting> {
             subTitle: '是否在推荐内容中展示动态(仅app端)',
             leading: Icon(Icons.motion_photos_on_outlined),
             setKey: SettingBoxKey.enableRcmdDynamic,
-            defaultVal: true,
+            defaultVal: false,
           ),
           const SetSwitchItem(
             title: '首页推荐刷新',

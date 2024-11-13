@@ -81,7 +81,7 @@ class _PlaySettingState extends State<PlaySetting> {
             subTitle: '进入详情页自动播放',
             leading: Icon(Icons.motion_photos_auto_outlined),
             setKey: SettingBoxKey.autoPlayEnable,
-            defaultVal: false,
+            defaultVal: true,
           ),
           const SetSwitchItem(
             title: '双击快退/快进',
@@ -193,7 +193,7 @@ class _PlaySettingState extends State<PlaySetting> {
             subTitle: '展示同时在看人数',
             leading: Icon(Icons.people_outlined),
             setKey: SettingBoxKey.enableOnlineTotal,
-            defaultVal: true,
+            defaultVal: false,
           ),
           ListTile(
             dense: false,

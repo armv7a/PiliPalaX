@@ -209,7 +209,7 @@ class VideoDetailController extends GetxController
     tabCtr = TabController(
         length: 2, vsync: this, initialIndex: defaultShowComment ? 1 : 0);
     autoPlay.value =
-        setting.get(SettingBoxKey.autoPlayEnable, defaultValue: false);
+        setting.get(SettingBoxKey.autoPlayEnable, defaultValue: true);
     if (autoPlay.value) isShowCover.value = false;
     enableHA.value = setting.get(SettingBoxKey.enableHA, defaultValue: true);
     hwdec.value = setting.get(SettingBoxKey.hardwareDecoding,
@@ -245,7 +245,7 @@ class VideoDetailController extends GetxController
         defaultValue: AudioQuality.hiRes.code);
     oid.value = IdUtils.bv2av(Get.parameters['bvid']!);
     _enableSponsorBlock =
-        setting.get(SettingBoxKey.enableSponsorBlock, defaultValue: false);
+        setting.get(SettingBoxKey.enableSponsorBlock, defaultValue: true);
     if (_enableSponsorBlock) {
       _blockLimit = GStorage.blockLimit;
       _blockSettings = GStorage.blockSettings;
